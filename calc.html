@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students Portal - Calculator</title>
+    <link
+      rel="shortcut icon"
+      href="images/simple-calculator.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Calculator/calc-style.css" />
+  </head>
+  <body>
+    <div class="container container-xs paper">
+      <!-- **************** Navigation Button- Go Back ******************* -->
+      <a href="home.html"
+        ><button id="go-back" class="btn btn-small">
+          <i class="fas fa-home" style="color: orange"></i>&nbspGo Back
+        </button></a
+      >
+
+      <!-- **************** Heading **************** -->
+      <div class="text-center">
+        <h2>Calculator</h2>
+      </div>
+
+      <!-- ***************** Inputs ********************* -->
+      <div class="row">
+        <div class="col sm-6">
+          <div class="form-group">
+            <label for="input1">Input 1:</label>
+            <input class="input-block" type="text" id="input1" />
+          </div>
+        </div>
+        <div class="col sm-6">
+          <div class="form-group">
+            <label for="input2">Input 2:</label>
+            <input class="input-block" type="text" id="input2" />
+          </div>
+        </div>
+      </div>
+
+      <!-- *********************** Operation Buttons *************************** -->
+      <div class="buttons">
+        <button id="add" class="btn btn-primary-outline btn-small">
+          <i class="fas fa-plus-circle fa-2x"></i>
+        </button>
+        <button id="sub" class="btn btn-secondary-outline btn-small">
+          <i class="fas fa-minus-circle fa-2x"></i>
+        </button>
+        <button id="mul" class="btn btn-success-outline btn-small">
+          <i class="fas fa-times-circle fa-2x"></i>
+        </button>
+        <button id="division" class="btn btn-warning-outline btn-small">
+          <i class="fas fa-divide fa-2x"></i>
+        </button>
+        <button id="mod" class="btn btn-danger-outline btn-small">
+          <i class="fas fa-percentage fa-2x"></i>
+        </button>
+      </div>
+
+      <!-- ********************* Result Box ************************* -->
+      <div class="result">
+        <div class="form-group">
+          <label for="result-box">Result:</label>
+          <input class="input-block" type="text" id="result-box" />
+        </div>
+      </div>
+    </div>
+
+    <script src="Calculator/app.js"></script>
+  </body>
+</html>
