@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Students Portal - ToDo</title>
-    <link rel="shortcut icon" href="images/clipboard.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/clipboard.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css"
@@ -13,25 +13,40 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
-</head>
-<body>
-    <div class="container container-sm paper">
-        <!-- **************** Navigation Button- Go Back ******************* -->
-      <a href="home.html"
-      ><button id="go-back" class="btn btn-small">
-        <i class="fas fa-home" style="color: orange"></i>&nbspGo Back
-      </button></a
-    >
-        <h1>ToDos</h1>
-        <div class="row flex-right">
-        <input type="text">
-        <button>Add Task</button>
+    <link rel="stylesheet" href="ToDo/todo-style.css">
+  </head>
+  <body>
+    <div id="main-container" class="container container-sm paper">
+      <!-- **************** Navigation Button- Go Back ******************* -->
+      <div class="row flex-edges">
+        <a href="home.html"
+        ><button id="go-back" class="btn">
+          <i class="fas fa-home" style="color: orange"></i>&nbspGo Back
+          </button></a
+          >
+      <button id="clear" title="Clear ToDos"><i class="fas fa-recycle fa-2x" style="color: red;"></i></button>
+      
     </div>
-    <div class="list1">
-        <ol class="">
+      <h1 class="text-center">ToDos</h1>
 
+
+      <!-- ************** Form For Inputting Task ***************** -->
+      <form id="task" class="row flex-right" autocomplete="off">
+
+        <input type="text" name="task-input" id="task-input" placeholder="Add Task">
+        <button type="submit" class="btn btn-secondary">Add Task</button>
+      </form>
+
+
+      <!-- *************** Actual Task List *************** -->
+      <div id="list-container" class="container container-xs">
+        <ol id="list">
         </ol>
-    </div>
-    </div>
-</body>
+      </div>
+      </div>
+
+    <script src="ToDo/todo.js"></script>
+  </body>
 </html>
+
+
