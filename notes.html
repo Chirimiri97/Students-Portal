@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Students Portal - Notes</title>
-    <link rel="shortcut icon" href="images/edit.png" type="image/x-icon">
-</head>
-<body>
-    
-</body>
+    <link rel="shortcut icon" href="images/edit.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <style>
+      #notes thead tr th {
+        text-align: center;
+      }
+      #notes tbody tr td {
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      table {
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+      li {
+        display: inline;
+      }
+
+      .left {
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container paper">
+      <a href="home.html"
+        ><button id="go-back" class="btn">
+          <i class="fas fa-home" style="color: orange"></i>&nbspGo Back
+        </button></a
+      >
+      <h1 class="text-center">Notes</h1>
+      <!-- <div class="container container-xs paper"> -->
+        <div class="row">
+          <div class="col-9 col"><table id="notes" border="1">
+            <thead>
+              <tr>
+                <th>Topic</th>
+                <th>Description</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MitroCondia Is a new Species Y</td>
+                <td>
+                  Bob Dylan Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quod laborum facilis, commodi provident expedita, maiores eligendi.
+                </td>
+             <td><i class="fas fa-trash-alt col-2 delete"></i></td>
+              </tr>
+              <tr>
+                <td>MitroCondia Is a new Species Y</td>
+                <td>
+                  Bob Dylan Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quod laborum facilis, commodi provident expedita, maiores eligendi.
+                </td>
+             <td></td>
+              </tr>
+              <tr>
+                <td>MitroCondia Is a new Species Y</td>
+                <td>
+                  Bob Dylan Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quod laborum facilis, commodi provident expedita, maiores eligendi.
+                </td>
+             <td></td>
+              </tr>
+              <tr>
+                <td>MitroCondia Is a new Species Y</td>
+                <td>
+                  Bob Dylan Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quod laborum facilis, commodi provident expedita, maiores eligendi.
+                </td>
+             <td></td>
+              </tr>
+              
+              <tr>
+                <td>2</td>
+                <td>Eric Clapton</td>
+                <td>Musician</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Daniel Kahneman</td>
+                <td>Psychologist</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Daniel Kahneman</td>
+                <td>Psychologist</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Daniel Kahneman</td>
+                <td>Psychologist</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Daniel Kahneman</td>
+                <td>Psychologist</td>
+              </tr>
+            </tbody>
+          </table></div>
+          <div class="col-3 col"><form action="">
+            <div class="form-group">
+              <label for="paperInputs1">Topic :-</label>
+              <input type="text" id="paperInputs1" class="input-block" />
+            </div>
+            <div class="form-group">
+              <label for="large-input">Description :-</label>
+              <textarea
+                id="large-input"
+                placeholder="Large input"
+                class="input-block"
+              ></textarea>
+            </div>
+            <button type="submit">Add Note</button>
+          </form></div>
+        </div>
+        
+      <!-- </div> -->
+
+      
+    </div>
+  </body>
 </html>
