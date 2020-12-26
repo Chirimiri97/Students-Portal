@@ -13,40 +13,41 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="Styles/todo.css">
+    <link rel="stylesheet" href="Styles/todo.css" />
   </head>
   <body>
     <div id="main-container" class="container container-sm paper">
       <!-- **************** Navigation Button- Go Back ******************* -->
       <div class="row flex-edges">
         <a href="home.html"
-        ><button id="go-back" class="btn">
-          <i class="fas fa-home" style="color: orange"></i>&nbspGo Back
+          ><button id="go-back" class="btn">
+            <i class="fas fa-home" style="color: orange"></i>&nbspGo Back
           </button></a
-          >
-      <button id="clear" title="Clear ToDos"><i class="fas fa-recycle fa-2x" style="color: red;"></i></button>
-      
-    </div>
+        >
+        <!-- *************** Clear Storage Button *************** -->
+        <button id="clear" title="Clear ToDos">
+          <i class="fas fa-recycle fa-2x" style="color: red"></i>
+        </button>
+      </div>
       <h1 class="text-center">ToDos</h1>
-
 
       <!-- ************** Form For Inputting Task ***************** -->
       <form id="task" class="row flex-right" autocomplete="off">
-
-        <input type="text" name="task-input" id="task-input" placeholder="Add Task">
+        <input
+          type="text"
+          name="task-input"
+          id="task-input"
+          placeholder="Add Task"
+        />
         <button type="submit" class="btn btn-secondary">Add Task</button>
       </form>
 
-
       <!-- *************** Actual Task List *************** -->
       <div id="list-container" class="container container-xs">
-        <ol id="list">
-        </ol>
+        <ol id="list"></ol>
       </div>
-      </div>
+    </div>
 
     <script src="Js/todo.js"></script>
   </body>
 </html>
-
-
