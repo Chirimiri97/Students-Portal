@@ -1,0 +1,33 @@
+/* Style fot table */
+table {
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+#notes thead tr th {
+  text-align: center;
+}
+
+#notes tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+/* Style for h1. */
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for delete button hover effect. */
+i:hover {
+  cursor: pointer;
+}
+
+
+/* Style for Clear Button. */
+#clear {
+  border-radius: 50%;
+  margin-top: 10px;
+}
