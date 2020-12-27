@@ -107,20 +107,18 @@ function getNotes() {
 
 // Function to remove note from Local Storage.
 function removeFromLocalStorage(noteItem) {
-    let notes;
+  let notes;
   if (localStorage.getItem("notes") === null) {
     notes = [];
   } else {
     notes = JSON.parse(localStorage.getItem("notes"));
   }
+
   //  Loop through the Notes to find topic name. If it matches. Remove that table.
-  notes.forEach(function(note, index) {
-    if(noteItem.firstChild.textContext === note[0]) {
-        notes.splice(index, 1);
+  for (let i = 0; i < notes.length; i++) {
+    if (notes[i][0] === noteItem.firstElementChild.textContent) {
+      notes.splice(i, 1);
     }
-  });
-
-  localStorage.setItem(JSON.stringify(notes));
-
+  }
+  localStorage.setItem("notes", JSON.stringify(notes));
 }
-
