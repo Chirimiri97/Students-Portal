@@ -7,5 +7,14 @@
 3. Clock
 4. Notes
 #
-1. **Calculator**
+1. **Calculator.**
 ![calculator](/images/readme/calculator.png)
+
+2. **ToDo List.**
+![todo](images/readme/todo.png)
+
+3. **Clock**
+![clock](images/readme/clock.png)
+
+4. **Notes**
+![notes](images/readme/notes.png)
