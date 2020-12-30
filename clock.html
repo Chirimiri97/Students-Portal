@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students Portal - Clock</title>
+    <link rel="shortcut icon" href="images/clock.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!-- Using internal styling because there is not much in styling  -->
+    <style>
+      #refresh {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ****************** Main Container ******************** -->
+    <div class="container container-sm paper" id="main-container">
+      <a href="index.html"
+        ><button id="go-back" class="btn">
+          <i class="fas fa-home" style="color: orange"></i>&nbspGo Back
+        </button></a
+      >
+      <!-- ************* Main Heading ************** -->
+      <h1 class="text-center" style="margin-top: 10px">Clock</h1>
+
+      <!-- *********** To Show Clock in Card Styling.. ************ -->
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title" id="time"></h4>
+          <h5 class="card-subtitle" id="date"></h5>
+          <p class="card-text" id="quote">"Hiii"</p>
+          <button class="btn" id="refresh" title="Refresh Quote">
+            <strong>--></strong>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./Js/clock.js"></script>
+  </body>
+</html>
