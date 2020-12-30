@@ -8,4 +8,4 @@
 4. Notes
 
 1. **Calculator**
-![calculator](/images/ReadMe Images/calculator.png)
+![calculator](/images/readme/calculator.png)
