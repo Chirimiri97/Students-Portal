@@ -8,7 +8,7 @@
 4. Notes
 #
 1. **Calculator.**
-![calculator](/images/readme/calculator.png | width = 100)
+![calculator](/images/readme/calculator.png)
 
 2. **ToDo List.**
 ![todo](images/readme/todo.png)
