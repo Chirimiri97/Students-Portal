@@ -8,7 +8,7 @@
 4. Notes
 
 
-#### **Calculator.**
+* **Calculator.**
 A simple calculator. You can add, subtract, multiply, divide, calculate modulus.
 ![calculator](images/readme/calculator.png)
 
