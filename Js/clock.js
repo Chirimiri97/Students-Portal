@@ -93,7 +93,7 @@ function displayTime() {
   let en= "AM";
 
   // Some conditions to make time format of 12 hours and set AM / PM.
-  if (hrs > 12) en = "PM";
+  if (hrs >= 12) en = "PM";
   if (hrs > 12) hrs = hrs - 12;
   if (hrs < 10) hrs = "0" + hrs;
   if (mins < 10) mins = "0" + mins;
